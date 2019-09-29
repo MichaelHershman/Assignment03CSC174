@@ -1,8 +1,209 @@
-.is-current{
-    color: pink;
-    font-size: 2em;
+/* The designer based its design from http://csc174.org/assignment02/Rome */
+
+
+/* 
+    Completely coded by myself (Islomzhan Akhmedov)
+    The main difference between mine and that of Assignment02 is that I used CSS Grid and they did not!
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Merienda|Open+Sans+Condensed:300');
+
+/*	*************************************************
+	BASE 
+	************************************************* */
+
+* {
+	margin: 0;
+	border: 0;
 }
 
-.sections:not(:first-of-type){
-    display: none;
+ul {
+	list-style-type: none;
 }
+
+.is-current {
+	background: #444B54;
+}
+
+
+/*	*************************************************
+	BASE - HEADER
+	************************************************* */
+
+header h1 {
+	font-family: 'Cinzel', serif;
+	border: black solid 2px;
+}
+
+
+/*	*************************************************
+	BASE - ASIDE
+	************************************************* */
+
+aside ul {
+	color: orangered;
+	font-family: 'Merienda', cursive;
+	display: flex;
+}
+
+aside ul li {
+	padding: 0px 10px;
+	border-right: #F6908C 1px solid;
+}
+
+aside ul li:last-of-type {
+	border-right: none;
+}
+
+
+/*	*************************************************
+	BASE - NAV
+	************************************************* */
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	background: #F44337;
+	margin-bottom: 2px;
+	width: 200px;
+	overflow: hidden;
+	font-family: 'Cinzel', serif;
+	padding: 5px;
+}
+
+nav ul li:hover {
+	opacity: 0.7;
+}
+
+nav ul li a {
+	padding: 10px 85px;
+	margin-left: -15px;
+	text-decoration: none;
+	color: white;
+}
+
+
+/*	*************************************************
+	BASE - INNER NAV
+	************************************************* */
+
+button {
+	background: #A7ADBA;
+	width: 200px;
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: x-Large;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+
+/*	*************************************************
+	BASE - MAIN
+	************************************************* */
+
+main {
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: 1.5em;
+	font-size: x-Large;
+}
+
+main h1+p {
+	margin-top: 0.5em;
+}
+
+.sections:not(:first-of-type) {
+	display: none;
+}
+
+
+/*	*************************************************
+	BASE - FOOTER
+	************************************************* */
+
+footer {
+	margin-top: 0.5em;
+	font-family: 'Open Sans Condensed';
+	font-size: x-Large;
+}
+
+
+/*	*************************************************
+	LAYOUT
+	************************************************* */
+
+.container {
+    margin: 25px auto;
+	width: 90%;
+	max-width: 960px;
+    
+	display: grid;
+	grid-template-columns: 260px 1fr 200px;
+}
+
+@media ( max-width: 375px ) {
+	.container { display: block; }
+}
+
+header {
+    grid-column: 1 / span 3; 
+    text-align: center;
+}
+
+.menu {
+    grid-column: 1 / span 3; 
+}
+
+aside {
+    grid-column: 1 / span 3; 
+}
+img {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    margin-top: 1.5em;
+}
+
+main {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+}
+.inner-menu {
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+footer {
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
