@@ -4,6 +4,8 @@
 /* 
     Completely coded by myself (Islomzhan Akhmedov)
     The main difference between mine and that of Assignment02 is that I used CSS Grid and they did not!
+    Also, in mine it has two different colors for the menu to seperate them, and the fonts do are not arbitrary but they are consistent with each other comparing to that assignment02.
+    Also, every image is displayed next to a larger text that makes it a better looking page.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Merienda|Open+Sans+Condensed:300|Metamorphous');
@@ -164,7 +166,6 @@ header {
 
 .menu {
     grid-column: 1 / span 3;
-    width: 840px;
     margin: 0 auto;
 }
 
