@@ -1,0 +1,8 @@
+.is-current{
+    color: pink;
+    font-size: 2em;
+}
+
+.sections:not(:first-of-type){
+    display: none;
+}
